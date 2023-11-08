@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheckPoint;
     public LayerMask groundLayer;
 
-    public float knockBackLenght,knockBackForce;
+    public float knockBackLenght, knockBackForce;
     private float knockBackCounter;
 
     private void Awake()
@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(knockBackCounter <= 0)
+        if (knockBackCounter <= 0)
         {
             rb.velocity = new Vector2(Input.GetAxis("Horizontal") * moveSpeed, rb.velocity.y);
             isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, groundLayer);
@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
                 if (isGrounded)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                    AudioManager.instance.PlaySFX(10);
                 }
                 else
                 {
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
                     {
                         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                         canDoubleJump = false;
+                        AudioManager.instance.PlaySFX(10);
                     }
                 }
             }
@@ -80,14 +82,14 @@ public class PlayerController : MonoBehaviour
             knockBackCounter -= Time.deltaTime;
             if (!sr.flipX)
             {
-                rb.velocity = new Vector2(-knockBackForce,rb.velocity.y);
+                rb.velocity = new Vector2(-knockBackForce, rb.velocity.y);
             }
             else
             {
                 rb.velocity = new Vector2(knockBackForce, rb.velocity.y);
             }
         }
-        
+
         anim.SetFloat("moveSpeed", Mathf.Abs(rb.velocity.x));
         anim.SetBool("isGrounded", isGrounded);
 
