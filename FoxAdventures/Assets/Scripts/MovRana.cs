@@ -6,7 +6,7 @@ public class MovRana : MonoBehaviour
 {
     [SerializeField]
     public float moveSpeed;
-    public Transform leftpoint , rightpoint;
+    public Transform leftpoint, rightpoint;
 
     private bool movingRight;
 
@@ -21,7 +21,7 @@ public class MovRana : MonoBehaviour
     void Start()
     {
         theRB = GetComponent<Rigidbody2D>();
-        anim = transform.Find("Rana").GetComponent<Animator>();
+        anim = transform.Find("frog").GetComponent<Animator>();
         leftpoint.parent = null;
         rightpoint.parent = null;
 
@@ -33,37 +33,47 @@ public class MovRana : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(moveCount> 0){
-            moveCount -= Time.deltaTime ;
-            if (movingRight){
-            theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
-            theSR.flipX = true;
+        if (moveCount > 0)
+        {
+            moveCount -= Time.deltaTime;
+            if (movingRight)
+            {
+                theRB.velocity = new Vector2(moveSpeed, theRB.velocity.y);
+                theSR.flipX = true;
 
-            if (transform.position.x > rightpoint.position.x){
-                movingRight = false;
+                if (transform.position.x > rightpoint.position.x)
+                {
+                    movingRight = false;
+                }
             }
-        } else {
-            theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
-            theSR.flipX = false;
+            else
+            {
+                theRB.velocity = new Vector2(-moveSpeed, theRB.velocity.y);
+                theSR.flipX = false;
 
-            if (transform.position.x < leftpoint.position.x){
-                movingRight = true;
+                if (transform.position.x < leftpoint.position.x)
+                {
+                    movingRight = true;
+                }
             }
+            if (moveCount <= 0)
+            {
+                waitCount = Random.Range(waitTime * 0.75f, waitTime * 1.25f);
+            }
+            anim.SetBool("IsMoving", true);
         }
-        if (moveCount <= 0){
-            waitCount = Random.Range(waitTime * 0.75f, waitTime * 1.25f);
-        }
-        anim.SetBool("IsMoving", true);
-        } else if (waitCount > 0){
+        else if (waitCount > 0)
+        {
             waitCount -= Time.deltaTime;
             theRB.velocity = new Vector2(0f, theRB.velocity.y);
 
-            if (waitCount <= 0){
+            if (waitCount <= 0)
+            {
                 moveCount = Random.Range(moveTime * 0.75f, moveTime * 1.25f);
             }
             anim.SetBool("IsMoving", false);
 
         }
-        
+
     }
 }
