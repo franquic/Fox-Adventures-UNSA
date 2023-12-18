@@ -7,6 +7,7 @@ public class DogMovement : MonoBehaviour
     public GameObject pointA;
     public GameObject pointB;
 
+    public Transform leftpoint, rightpoint;
     private Rigidbody2D rb;
     private Animator anim;
     private Transform currentPoint;
