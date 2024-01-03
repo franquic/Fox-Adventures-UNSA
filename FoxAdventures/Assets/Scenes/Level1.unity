@@ -68285,7 +68285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b402b776581ce4da1a5528ddcebc62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreDeLaEscenaACambiar: Level0
+  nombreDeLaEscenaACambiar: Menu
 --- !u!61 &573939035
 BoxCollider2D:
   m_ObjectHideFlags: 0

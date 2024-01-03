@@ -23,7 +23,7 @@ public class BossTankHitbox : MonoBehaviour
         if (other.tag == "Player" && PlayerController.instance.transform.position.y > transform.position.y)
         {
             bossCont.TakeHit();
-            PlayerController.instance.IsSceneBound();
+            //PlayerController.instance.IsSceneBound();
             gameObject.SetActive(false);
         }
     }
