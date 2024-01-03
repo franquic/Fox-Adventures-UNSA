@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class CambiarEscena : MonoBehaviour
 {
-    public string nombreEscena;
+    private string nombreEscena = "Level 0";
 
     public void LoadScene()
     {
