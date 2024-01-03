@@ -14,6 +14,9 @@ public class ActivarObjetoEnZona : MonoBehaviour
             if (objetoAActivar != null)
             {
                 objetoAActivar.SetActive(true);
+
+                // Desactivar el objeto que tiene el script
+                gameObject.SetActive(false);
             }
             else
             {
