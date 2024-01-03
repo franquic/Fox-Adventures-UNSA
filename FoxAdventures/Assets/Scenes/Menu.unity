@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a479eb8563a434893704ec61cf77bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startLevel: Level1
+  startLevel: HistoriaPart1
 --- !u!1 &1995663371
 GameObject:
   m_ObjectHideFlags: 0

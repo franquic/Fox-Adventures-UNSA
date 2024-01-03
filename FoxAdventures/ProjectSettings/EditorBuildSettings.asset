@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 9f4b4d10508221246ad5b99feffc82e1
   - enabled: 1
-    path: Assets/HistoriaPart1.unity
+    path: Assets/Scenes/HistoriaPart1.unity
     guid: 3f64daa817856e8418b227d0d4de5261
   - enabled: 1
     path: Assets/Scenes/Level0.unity
@@ -20,6 +20,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: f5667c5f72d464e468df1a9ef6504f2f
-    path: Assets/Scenes/Level 0.unity
-    guid: 62774d84bbfbba64eb5f3046314ec71e
   m_configObjects: {}
