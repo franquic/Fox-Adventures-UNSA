@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 25236527}
   m_Layer: 0
   m_Name: EnemyFrog (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 52198638}
   m_Layer: 0
   m_Name: EnemyDog
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,7 +346,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.14209807}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -357,7 +357,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.9898503}
   m_EdgeRadius: 0
 --- !u!50 &52198635
 Rigidbody2D:
@@ -67015,7 +67015,7 @@ GameObject:
   - component: {fileID: 198234518}
   m_Layer: 0
   m_Name: EnemyFrog (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67270,7 +67270,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.019111395, y: 0.020810604}
+  m_Offset: {x: 0.019111395, y: 0.014651775}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -67281,7 +67281,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.5800176, y: 1.6122866}
+  m_Size: {x: 1.5800176, y: 1.6246042}
   m_EdgeRadius: 0
 --- !u!1 &281821350
 GameObject:
@@ -68421,6 +68421,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575477358}
   m_CullTransparentMesh: 1
+--- !u!1 &610937178
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610937180}
+  - component: {fileID: 610937179}
+  m_Layer: 0
+  m_Name: _FungusState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &610937179
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610937178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedFlowchart: {fileID: 0}
+--- !u!4 &610937180
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610937178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &645878531 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4728116998880301750, guid: cebb5fe7e55a9a14bafd9d09647f9e8b, type: 3}
@@ -76133,7 +76178,7 @@ GameObject:
   - component: {fileID: 974589255}
   m_Layer: 0
   m_Name: EnemyFrog
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76270,7 +76315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18329c1c9ae7f1b40a0c89a9da4f66ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
+  explosionPrefab: {fileID: 6399384360900253613, guid: 136f171c3a92ae14eb4a483aeadd87d7, type: 3}
 --- !u!1 &982670552
 GameObject:
   m_ObjectHideFlags: 0
@@ -77057,7 +77102,7 @@ GameObject:
   - component: {fileID: 1219176964}
   m_Layer: 0
   m_Name: EnemyFrog (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78438,6 +78483,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1854408169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1651482462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651482463}
+  - component: {fileID: 1651482465}
+  - component: {fileID: 1651482464}
+  m_Layer: 0
+  m_Name: Hurbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1651482463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651482462}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1717075495}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1651482464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651482462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d4ee11261d2f40488fe20d127a0d7be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 6399384360900253613, guid: 136f171c3a92ae14eb4a483aeadd87d7, type: 3}
+--- !u!61 &1651482465
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651482462}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09260845, y: -0.9378668}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7498703, y: 0.10605538}
+  m_EdgeRadius: 0
 --- !u!1 &1693432489
 GameObject:
   m_ObjectHideFlags: 0
@@ -79885,9 +80021,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5326884153436447381, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5386946757475015018, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
       propertyPath: m_Name
       value: Enemy2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386946757475015018, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6528545582658237522, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
       propertyPath: m_SortingLayer
@@ -80215,6 +80359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bat-fly1
       objectReference: {fileID: 0}
+    - target: {fileID: 7139727577401084425, guid: af6c65fb5d3cd5447bb36fbf81033fc0, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80299,7 +80447,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1472453650301058611, guid: 3954e3ac9b1bd7041b5f09bd6ff0d1ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1651482463}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3954e3ac9b1bd7041b5f09bd6ff0d1ed, type: 3}
 --- !u!1001 &3214092240801988709
@@ -80362,6 +80513,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5326884153436447381, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5386946757475015018, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -80369,6 +80524,10 @@ PrefabInstance:
     - target: {fileID: 5386946757475015018, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5386946757475015018, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 6528545582658237522, guid: 44cdeb3868861274e9a1afe64f42f516, type: 3}
       propertyPath: m_SortingLayer
@@ -80490,3 +80649,4 @@ SceneRoots:
   - {fileID: 424072496}
   - {fileID: 336770744}
   - {fileID: 573939036}
+  - {fileID: 610937180}
